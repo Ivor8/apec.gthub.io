@@ -1,0 +1,26 @@
+.singleCourses__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.course__img img{
+    border-radius: 10rem;
+}
+.course__title{
+    text-align: center;
+    font-weight: 300;
+    padding: 2rem 0;
+}
+.course__parts{
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+.course__partitions{
+    background: var(--color-bg1);
+    padding: 1rem 4rem;
+    margin: 1.2rem 0;
+}
+.partition{
+    
+}

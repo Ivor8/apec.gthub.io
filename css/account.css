@@ -1,0 +1,99 @@
+/* ======== Top Navigation Section ======== */
+.top__account-container {
+  width: 100%;
+}
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg2);
+  padding: 0.4rem 6rem;
+}
+.profile__photo-name {
+  display: flex;
+  flex-direction: column;
+}
+.profile__photo-name img {
+  border: 2px solid var(--color-white);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  clip-path: circle(50% at center);
+}
+.profile__photo-name span {
+  font-size: 1.6rem;
+  font-family: cursive;
+}
+.account__right-actions button,
+i {
+  cursor: pointer;
+}
+.account__right-actions i {
+  padding: 0.2rem 0.5rem;
+  font-size: 2rem;
+}
+/* ======== User Courses Section  ======== */
+.courses_section {
+  margin-top: 1.5rem;
+}
+.courses_section .add-course-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.courses_level-information {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.single-course {
+  background: var(--color-bg2);
+  text-align: center;
+  padding: 0.2rem;
+}
+.course-description a {
+  margin: 0.7rem 0;
+}
+.course-description h2 {
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+/* ========= Media Queries ======== */
+@media screen and (max-width: 1050px) {
+  /* top navigation */
+  .top-navigation {
+    padding: 0.4rem 4rem;
+  }
+  /* courses section */
+  .courses_level-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-navigation {
+    padding: 0.4rem 1rem;
+  }
+  .profile__photo-name img {
+    width: 74px;
+    height: 74px;
+  }
+  .profile__photo-name span {
+    font-size: 1.2rem;
+    font-family: cursive;
+  }
+  .account__right-actions .btn {
+    padding: 0.7rem 1.6rem;
+  }
+  /* courses section */
+  .courses_level-information {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
